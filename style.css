@@ -11,23 +11,36 @@ body {
     line-height: 1.5;
 }
 
-#cargando {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 9999;
+/*Loader*/
+
+.loader {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 3, 3, 0.521);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #7986cb;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
-  
-  #cargando img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
+}
 
 .contenedor {
     display: flex;
@@ -299,9 +312,16 @@ body {
 
 /*Ubicacion*/
 #ubicacion{
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: rgba(128, 128, 128, 0.247);
 }
 #ubicacion h2 {
+  color: white;
   font-size: 36px;
   margin-bottom: 20px;
   text-align: center;
@@ -319,6 +339,8 @@ body {
   text-align: center;
   font-size: 18px;
   margin-top: 20px;
+  color: white
+
 }
 
 #ubicacion a {
@@ -330,13 +352,32 @@ body {
   text-decoration: underline;
 }
 
+.wp{
+  background: green;
+  margin-top: 20px;
+}
+
+.wp a {
+  color: white !important;
+}
+
 
 
 /* Estilos de sección de contacto */
 .contacto {
   background: rgba(128, 128, 128, 0.479);
     padding: 80px 0;
+    color: white
 }
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  z-index: -1;
+}
+
 
 .contenedor-form {
     display: flex;

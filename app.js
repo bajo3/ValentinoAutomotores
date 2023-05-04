@@ -1,3 +1,10 @@
+// Mostrar el loader al cargar la página
+window.addEventListener('load', () => {
+  const loader = document.querySelector('.loader');
+  loader.style.display = 'none';
+});
+
+// Función para el menú de navegación
 const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
@@ -19,6 +26,7 @@ const navSlide = () => {
     // Burger animation
     burger.classList.toggle('toggle');
   });
-}
+};
 
 navSlide();
+
