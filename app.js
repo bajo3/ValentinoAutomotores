@@ -4,6 +4,19 @@ window.addEventListener('load', () => {
   loader.style.display = 'none';
 });
 
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    document.querySelector("nav").classList.add("active");
+  } else {
+    document.querySelector("nav").classList.remove("active");
+  }
+  prevScrollPos = currentScrollPos;
+};
+
+
 // Función para el menú de navegación
 const navSlide = () => {
   const burger = document.querySelector('.burger');
