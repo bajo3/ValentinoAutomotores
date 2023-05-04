@@ -289,12 +289,13 @@ body {
 
 /* Estilos de sección de inventario */
 #inventario {
-    background-color: #fff;
+    background-color: #e0dfdf59;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(255, 255, 255)
 }
 
 #inventario h2 {
@@ -312,13 +313,12 @@ body {
 
 /*Ubicacion*/
 #ubicacion{
-  background-color: #fff;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(128, 128, 128, 0.247);
+  background: rgba(95, 95, 95, 0.445);
 }
 #ubicacion h2 {
   color: white;
@@ -365,7 +365,7 @@ body {
 
 /* Estilos de sección de contacto */
 .contacto {
-  background: rgba(128, 128, 128, 0.479);
+  background: rgba(3, 3, 3, 0.479);
     padding: 80px 0;
     color: white
 }
