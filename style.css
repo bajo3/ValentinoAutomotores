@@ -145,10 +145,12 @@ body {
       width: 100%;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
+   
     }
   
     .nav-links li {
       width: 100%;
+     
     }
   
     .nav-links li a {
@@ -156,7 +158,10 @@ body {
       justify-content: center;
       width: 100%;
       text-align: center;
+      align-items: normal;
+      margin-top: 10px;
       color: white;
+
     }
   
     .burger {
@@ -211,6 +216,7 @@ body {
 
 #inicio h1 {
     font-size: 48px;
+    font-weight: 200;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -243,13 +249,15 @@ body {
 
   #inicio .video-fondo video {
     position: static;
+    transform: none;
   }
 
+ 
 
   #inicio h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: rgb(5, 5, 5);
+    color: rgb(248, 243, 243);
   }
 
   #inicio p {
