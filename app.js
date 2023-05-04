@@ -39,7 +39,16 @@ const navSlide = () => {
     // Burger animation
     burger.classList.toggle('toggle');
   });
+
+  // Cierra el menú hamburguesa cuando se hace clic en un enlace
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('nav-active');
+      burger.classList.remove('toggle');
+    });
+  });
 };
 
 navSlide();
+
 
