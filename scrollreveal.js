@@ -1,25 +1,20 @@
-// Inicializar scrollReveal
-ScrollReveal().reveal('.contenedor', {delay: 200})
+const animaciones = {
+    ".contenedor": 300,
+    "#inventario h2": 300,
+    "#inventario p": 500,
+    "#inventario .boton": 700,
+    "#ubicacion h2": 300,
+    "#ubicacion iframe": 500,
+    "#ubicacion p": 700,
+    "#ubicacion .boton": 900,
+    ".reco h2": 300,
+    ".reco .owl-carousel": 500,
+    ".footer ": 400
+};
 
-// Animar para la seccion de inventario
-ScrollReveal().reveal('#inventario h2', {delay: 200})
-ScrollReveal().reveal('#inventario p', {delay: 400})
-ScrollReveal().reveal('#inventario .boton', {delay: 600})
-
-// Animacion para la sseccion de ubicaicon
-ScrollReveal().reveal('#ubicacion h2', {delay: 200})
-ScrollReveal().reveal('#ubicacion iframe', {delay: 400})
-ScrollReveal().reveal('#ubicacion p', {delay: 600})
-ScrollReveal().reveal('#ubicacion .boton', {delay: 800})
-
-// Animacion Reco
-ScrollReveal().reveal('#reco h2', {delay: 200})
-ScrollReveal().reveal('#reco .owl-carousel img', {delay: 400})
-
-//Animacion contacto
-ScrollReveal().reveal('#contacto h2', {delay: 200})
-ScrollReveal().reveal('#contacto p', {delay: 400})
-ScrollReveal().reveal('#contacto form', {delay: 600})
-
-//Animacion del footer
-ScrollReveal().reveal('#footer p', {delay: 200})
+for (const selector in animaciones) {
+    if (Object.hasOwnProperty.call(animaciones, selector)) {
+        const delay = animaciones[selector];
+        ScrollReveal().reveal(selector, { delay });
+    }
+}

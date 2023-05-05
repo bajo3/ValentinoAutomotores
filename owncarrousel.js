@@ -1,23 +1,14 @@
-$(document).ready(function () {
+$(function() {
     $('.owl-carousel').owlCarousel({
-        loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 2000, // Tiempo entre cada movimiento en ms
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         nav: true,
-        navText: [
-            "<button class='owl-prev'>Anterior</button>",
-            "<button class='owl-next'>Siguiente</button>"
-        ],
+        navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
         responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-        
+            0: { items: 1 },
+            600: { items: 3 }
         }
     });
 });

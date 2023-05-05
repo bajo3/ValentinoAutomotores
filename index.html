@@ -23,7 +23,7 @@
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#inventario">Catalogo</a></li>
           <li><a href="#ubicacion">Encontranos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#ubicacion">Contacto</a></li>
         </ul>
        
         <div class="burger">
@@ -64,6 +64,7 @@
         <a href="#contacto" class="boton">Contáctanos</a>
       </div>
     </section>
+
     <section class="reco">
       <h2>Nuestros clientes nos eligen</h2>
       <div class="owl-carousel owl-theme">
@@ -86,40 +87,37 @@
       <div class="contenedor">
         <h2>Encontranos en</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.3609315450203!2d-59.12522942393082!3d-37.31027730543169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911ff5b8165f55%3A0xa244e4c18f830d59!2sLiniers%201465%2C%20B7001%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1683161123773!5m2!1ses!2sar" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Contáctanos al <a href="tel:+541112345678">+54 11 1234-5678</a></p>
+        <div class="container">
+
+          <button class="boton"><a target="_blank" href="https://goo.gl/maps/8jtS6xjrTYVtzbvp8">Cómo llegar</a></button>
+        </a>
+        <a class="boton" href="tel:+541112345678"><i class="fa-solid fa-phone"></i>+54 11 1234-5678</a>
         <button class="boton wp"><a href="https://wa.me/c/5492494687681">Whatsapp</a></button>
+      </div>
 
       </div>
     </section>
     
-    <section id="contacto" class="seccion contacto">
-        <div class="contenedor-form">
-          <h2 class="titulo-seccion">¡Contáctanos!</h2>
-          <p>Si estás interesado en alguno de nuestros vehículos o tienes alguna consulta, no dudes en ponerte en contacto con nosotros.</p>
-          <form target="_blank" id="formulario" class="formulario" action="https://formsubmit.co/felipelentini98@hotmail.com" method="POST">
-            <div class="campo">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
-            </div>
-            <div class="campo">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
-            </div>
-            <div class="campo">
-              <label for="mensaje">Mensaje:</label>
-              <textarea id="mensaje" name="mensaje" placeholder="Ingresa tu mensaje" required></textarea>
-            </div>
-            <div class="campo">
-              <button type="submit" class="boton boton-contacto">Enviar</button>
-            </div>
-          </form>
-        </div>
-      </section>
+
       
     
-    <footer>
-      <p> Build with <span>♥</span>  Felipe Lentini 2023 &copy;</p>
+    <footer class="footer">
+      <div class="footer-left">
+        <p>¡Síguenos en las redes sociales!</p>
+        <div class="social-media-icons">
+          <a href="#"><i class=" no-move fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram no-move"></i></a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p>Información de contacto</p>
+        <div class="contact-details">
+          <p><i class="fas fa-map-marker-alt "></i> Buenos Aires, Tandil</p>
+          <p><i class="fas fa-phone"></i> +54 11 1234-5678</p>
+        </div>
+      </div>
     </footer>
+    
 
     <!--Scripts-->
     <script src="https://unpkg.com/scrollreveal"></script>
