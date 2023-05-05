@@ -12,6 +12,10 @@ ScrollReveal().reveal('#ubicacion iframe', {delay: 400})
 ScrollReveal().reveal('#ubicacion p', {delay: 600})
 ScrollReveal().reveal('#ubicacion .boton', {delay: 800})
 
+// Animacion Reco
+ScrollReveal().reveal('#reco h2', {delay: 200})
+ScrollReveal().reveal('#reco .owl-carousel img', {delay: 400})
+
 //Animacion contacto
 ScrollReveal().reveal('#contacto h2', {delay: 200})
 ScrollReveal().reveal('#contacto p', {delay: 400})
