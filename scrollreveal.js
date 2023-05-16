@@ -12,9 +12,11 @@ const animaciones = {
     ".footer ": 400
 };
 
+const scrollReveal = ScrollReveal();
+
 for (const selector in animaciones) {
-    if (Object.hasOwnProperty.call(animaciones, selector)) {
+    if (animaciones.hasOwnProperty(selector)) {
         const delay = animaciones[selector];
-        ScrollReveal().reveal(selector, { delay });
+        scrollReveal.reveal(selector, { delay });
     }
 }

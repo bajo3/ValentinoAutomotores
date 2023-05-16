@@ -1,10 +1,10 @@
 $(function() {
     $('.owl-carousel').owlCarousel({
         margin: 10,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        nav: true,
+        loop:true,
+        autoPlay:true,
+        nav:false,
+        rewindNav:false,
         navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
         responsive: {
             0: { items: 1 },

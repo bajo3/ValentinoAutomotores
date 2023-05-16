@@ -436,6 +436,10 @@ margin-top: 30px;
   color: #fff;
 }
 
+.owl-dot {
+  background: white !important;
+}
+
 
 
 /*Ubicacion*/
