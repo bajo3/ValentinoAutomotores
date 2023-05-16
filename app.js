@@ -5,29 +5,24 @@ window.addEventListener('load', () => {
 });
 
 let prevScrollPos = window.pageYOffset;
+const nav = document.querySelector("nav");
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelectorAll('.nav-links li');
 
-window.onscroll = function() {
+window.addEventListener('scroll', () => {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {
-    document.querySelector("nav").classList.add("active");
+    nav.classList.add("active");
   } else {
-    document.querySelector("nav").classList.remove("active");
+    nav.classList.remove("active");
   }
   prevScrollPos = currentScrollPos;
-};
+}, { passive: true });
 
-
-// Función para el menú de navegación
 const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
-
   burger.addEventListener('click', () => {
-    // Toggle nav
     nav.classList.toggle('nav-active');
 
-    // Animate links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = '';
@@ -36,11 +31,9 @@ const navSlide = () => {
       }
     });
 
-    // Burger animation
     burger.classList.toggle('toggle');
   });
 
-  // Cierra el menú hamburguesa cuando se hace clic en un enlace
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('nav-active');

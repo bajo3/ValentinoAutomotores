@@ -8,7 +8,7 @@ const animaciones = {
     "#ubicacion p": 700,
     "#ubicacion .boton": 900,
     ".reco h2": 300,
-    ".reco .owl-carousel": 500,
+    ".reco .owl-carousel": 400,
     ".footer ": 400
 };
 
@@ -17,6 +17,12 @@ const scrollReveal = ScrollReveal();
 for (const selector in animaciones) {
     if (animaciones.hasOwnProperty(selector)) {
         const delay = animaciones[selector];
-        scrollReveal.reveal(selector, { delay });
+
+        if (selector === ".reco .owl-carousel" && typeof $.fn.owlCarousel === "function") {
+            // Verificar si Owl Carousel está cargado
+            scrollReveal.reveal(selector, { delay });
+        } else if (selector !== ".reco .owl-carousel") {
+            scrollReveal.reveal(selector, { delay });
+        }
     }
 }
